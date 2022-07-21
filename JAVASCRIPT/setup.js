@@ -38,7 +38,7 @@ onload = function () {
   network.setOptions(options);
   // Network for result graph
   const network2 = new vis.Network(container2);
-  network2.setOptions(options);
+  network2.setOptions(options);   
 
   function createData(){
       V = Math.floor(Math.random() * 8) + 3; // Ensures V is between 3 and 10
@@ -210,7 +210,7 @@ onload = function () {
 
   function solveData() {
 
-      const data = curr_data;
+ 
 
       // Creating adjacency list matrix graph from question data
       const graph = createGraph(data);
